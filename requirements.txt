@@ -1,0 +1,7 @@
+numpy
+matplotlib
+pandas
+nbformat   # seulement pour parties/1_capteur_et_sonde/build_nb.py
+nbclient
+scipy
+cma
