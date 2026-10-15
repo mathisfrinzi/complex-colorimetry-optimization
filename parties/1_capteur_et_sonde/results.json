@@ -1,0 +1,290 @@
+{
+ "ablation": [
+  {
+   "fonction": "quad",
+   "plafond": false,
+   "taux": 0.9375,
+   "iters": 49.8,
+   "evals": 397.0
+  },
+  {
+   "fonction": "quad",
+   "plafond": true,
+   "taux": 1.0,
+   "iters": 31.4375,
+   "evals": 213.0
+  },
+  {
+   "fonction": "cubic",
+   "plafond": false,
+   "taux": 1.0,
+   "iters": 42.25,
+   "evals": 280.75
+  },
+  {
+   "fonction": "cubic",
+   "plafond": true,
+   "taux": 1.0,
+   "iters": 28.875,
+   "evals": 193.75
+  },
+  {
+   "fonction": "poly5",
+   "plafond": false,
+   "taux": 1.0,
+   "iters": 59.0,
+   "evals": 393.125
+  },
+  {
+   "fonction": "poly5",
+   "plafond": true,
+   "taux": 1.0,
+   "iters": 37.5,
+   "evals": 252.625
+  },
+  {
+   "fonction": "double",
+   "plafond": false,
+   "taux": 1.0,
+   "iters": 27.6875,
+   "evals": 188.5625
+  },
+  {
+   "fonction": "double",
+   "plafond": true,
+   "taux": 1.0,
+   "iters": 31.0,
+   "evals": 210.6875
+  },
+  {
+   "fonction": "sinz",
+   "plafond": false,
+   "taux": 1.0,
+   "iters": 45.5,
+   "evals": 318.25
+  },
+  {
+   "fonction": "sinz",
+   "plafond": true,
+   "taux": 1.0,
+   "iters": 44.0,
+   "evals": 308.75
+  }
+ ],
+ "basins": {
+  "newton": {
+   "echec": 0.0,
+   "frontiere": 0.2111111111111111
+  },
+  "exacte": {
+   "echec": 0.0,
+   "frontiere": 0.05873015873015873
+  },
+  "couleurs": {
+   "echec": 0.007716049382716049,
+   "frontiere": 0.07142857142857142
+  }
+ },
+ "bruit": {
+  "sigmas": [
+   0,
+   0.005,
+   0.01,
+   0.02,
+   0.035,
+   0.05,
+   0.075,
+   0.1,
+   0.15
+  ],
+  "quad, eps=0.06, sigma connu": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.8541666666666666,
+   0.16666666666666666
+  ],
+  "quad, eps=0.06, sigma inconnu": [
+   1.0,
+   1.0,
+   1.0,
+   0.7916666666666666,
+   0.3541666666666667,
+   0.1875,
+   0.08333333333333333,
+   0.08333333333333333,
+   0.020833333333333332
+  ],
+  "cubic, eps=0.06, sigma connu": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.7916666666666666,
+   0.125
+  ],
+  "cubic, eps=0.06, sigma inconnu": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.7291666666666666,
+   0.5208333333333334,
+   0.3958333333333333,
+   0.22916666666666666,
+   0.0
+  ]
+ },
+ "multiples": {
+  "double": {
+   "newton": {
+    "status": "ok",
+    "iters": 11
+   },
+   "exacte": {
+    "status": "ok",
+    "iters": 23,
+    "evals": 93
+   },
+   "couleurs": {
+    "status": "ok",
+    "iters": 46,
+    "evals": 309
+   }
+  },
+  "sinz": {
+   "newton": {
+    "status": "ok",
+    "iters": 12
+   },
+   "exacte": {
+    "status": "ok",
+    "iters": 34,
+    "evals": 137
+   },
+   "couleurs": {
+    "status": "ok",
+    "iters": 40,
+    "evals": 278
+   }
+  }
+ },
+ "argument_table": {
+  "accord": 10,
+  "total": 10
+ },
+ "argument_precision": {
+  "M": [
+   8,
+   16,
+   32,
+   64,
+   128,
+   256
+  ],
+  "3 bits": [
+   0.7933333333333333,
+   0.9433333333333334,
+   0.9966666666666667,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "4 bits": [
+   0.7933333333333333,
+   0.95,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "8 bits": [
+   0.81,
+   0.9533333333333334,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ "recherche": {
+  "cubic": {
+   "zeros_vrais": 3,
+   "trouves": 3,
+   "multiplicite_totale": 3,
+   "erreur_max": 0.000299573118253239,
+   "evals_teinte": 7044,
+   "evals_total": 7404
+  },
+  "poly5": {
+   "zeros_vrais": 5,
+   "trouves": 5,
+   "multiplicite_totale": 5,
+   "erreur_max": 0.0003099852608284459,
+   "evals_teinte": 12276,
+   "evals_total": 12937
+  },
+  "double": {
+   "zeros_vrais": 2,
+   "trouves": 2,
+   "multiplicite_totale": 3,
+   "erreur_max": 0.005638951852142717,
+   "evals_teinte": 7520,
+   "evals_total": 7621
+  }
+ },
+ "echelle": {
+  "log10_s": [
+   -250,
+   -150,
+   -50,
+   0,
+   50,
+   150,
+   250
+  ],
+  "couleurs": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "exacte": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "Newton": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "gradient |f|^2": [
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ }
+}
